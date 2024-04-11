@@ -2,7 +2,7 @@
 
 ## Description
 The `sonarqube-buildpack` is a [Cloud Foundry](https://www.cloudfoundry.org/) buildpack for running [SonarQube](https://www.sonarqube.org/).
-It installs Java 8 and SonarQube and uses the provided `sonar.properties` file for configuration.
+It installs Liberica JDK 22 and SonarQube and uses the provided `sonar.properties` file for configuration.
 
 ## Supported platforms
 This buildpack is tested with Cloud Foundry 6.36.1-6.45.0. 
@@ -11,7 +11,7 @@ This buildpack is tested with Cloud Foundry 6.36.1-6.45.0.
 To use this buildpack, specify the URI of this repository when pushing a sonar.properties file to Cloud Foundry.
 
 ```bash
-$ cf push <APP-NAME> -p sonar.properties -b https://github.com/joscha-alisch/cf-sonarqube-buildpack.git
+$ cf push <APP-NAME> -p sonar.properties -b https://github.com/liponcio/cf-sonarqube-buildpack.git
 ```
 
 **Important**
